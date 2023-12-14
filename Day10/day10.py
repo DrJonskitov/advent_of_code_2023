@@ -93,7 +93,6 @@ class Day10:
     def find_number_of_captured_cells(self, locations: list[Location]) -> int:
         start_index: int = self.find_top_location(locations)
         sorted_clockwise: bool = self.is_sorted_clockwise(start_index, locations)
-        # sorted_location: list[Location] = self.sort_locations_from_start_counter_clockwise(start_index, locations)
         number_of_locations: int = len(locations)
         number_of_captured_cells: int = 0
         previous_location: Location = locations[start_index]
@@ -186,7 +185,7 @@ class Day10:
 day10: Day10 = Day10()
 print("Part 1 test 2: " + str(day10.execute_part1_test2()))
 print("Part 1 test 2: " + str(day10.execute_part1_input()))
-print("Part 1 Inpurt: " + str(day10.execute_part1_test1()))
+print("Part 1 Input: " + str(day10.execute_part1_test1()))
 
 print("Part 2 test 1: " + str(day10.execute_part2_test1()))
 print("Part 2 test 2: " + str(day10.execute_part2_test2()))
