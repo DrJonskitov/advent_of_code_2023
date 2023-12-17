@@ -1,5 +1,4 @@
 import functools
-import re
 from collections import defaultdict 
 
 
